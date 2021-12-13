@@ -9,3 +9,25 @@ Git
    - Memudahkan tracking jika terdapat perubahan
    - Memudahkan berkolaborasi dengan developer lain
    - Memudahkan cara deploy modern
+
+3. Perintah Dasar Git
+   - Git init   : Digunakan untuk membuat repository baru
+   - Git config : Untuk mengatur konfigurasi seperti email, username, dll
+   				  + Config local untuk konfigurasi local/pada komputer masing-masing
+   				  + Config global untuk konfigurasi ke server
+   - Git status : Untuk megetahui status file (Untracked/ staging area, modified)
+   - Git add 	: Memasukan file ke staging area
+   				  + Jika ingin memasukan file tertentu gunakan "git add namaFile"
+   				  + Jika ingin memasukan semua file gunakan "git ."
+   - Git commit : Untuk menambahkan keterangan perubahan apa yang kita lakukan pada file tersebut
+   				  + ' commit –m “Isi dengan keterangan untuk commit” '
+   - Git log    : Untuk melihat riwayat commit
+   - Git remote : Menghubungkan ke Server Repository (github/gitlab)
+   				  + ` git remote add origin https://github.com/nama_akun/nama_repo.git `
+   - Git clone  : Untuk mengcopy repo dari server				  		  
+   				  + ` git clone https://github.com/nama_akun/nama_repo.git `
+   - Git push 	: Untuk mengirim perubahan atau file dari lokal ke remote server
+   				  + ` git push origin master `
+   - Git pull 	: Untuk mengambil commit dari server jika ada perubahan yang dibuat oleh branch lain
+   				  + ` git pull origin master `
+   - Git --help : Untuk melihat perintah-perintah lainnya
