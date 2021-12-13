@@ -49,3 +49,12 @@ Git
 
 6. Conflict
    - Terjadi ketika merging 2 branch yang memiliki perubahan pada file yang sama, ketika conflict terjadi salah satu branch harus memperbaiki file yang bermasalah, setelah selesai dapat melakukan commit kembali, setelah itu dapat dilakukan merge kembali
+
+7. Sourcetree 
+   + Merupakan software berbasis GUI yang memudahkan dan mempercepatk kinerja dalam pengoperasian git
+
+   + Konfiurasi diff 
+     - Pertama install diff merge (https://sourcegear.com/diffmerge/downloads.php)
+     - Lalu konfigurasi diff pada sourcetree dengan cara pilih menu Tools->Option->Diff
+     - Pada pilihan External Diff/Merge pilih 'DiffMerge', maka pengaturan Command akan otomatis terisi dengan menunjukan letak file yang bernama 'sgdm.exe'
+     - Klik OK, konfigurasi diff selesai dilakukan   
