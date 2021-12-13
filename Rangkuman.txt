@@ -1,0 +1,11 @@
+Git
+
+1. Pengertian
+   Git merupakan version control system yang diciptakan oleh Linus Torvalds untuk digunakan para developer untuk mengembangkan software secara bersama-sama.
+
+2. Manfaat   
+   - Dapat menyimpan seluruh version source code
+   - Dapat berkontribusi ke banyak proyek open-source
+   - Memudahkan tracking jika terdapat perubahan
+   - Memudahkan berkolaborasi dengan developer lain
+   - Memudahkan cara deploy modern
