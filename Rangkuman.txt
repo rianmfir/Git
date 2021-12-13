@@ -31,3 +31,21 @@ Git
    - Git pull 	: Untuk mengambil commit dari server jika ada perubahan yang dibuat oleh branch lain
    				  + ` git pull origin master `
    - Git --help : Untuk melihat perintah-perintah lainnya
+
+4. Branch
+   - Merupakan cabang/salinan dari repo utama, yang perubahannya tidak akan langsung mempengaruhi repo utama
+
+   - Manfaat
+     + Parallel development
+	 + Digunakan untuk memanajemen pengembangan. misalnya test branch, unstable branch dan stable branch
+
+5. Perintah Dasar Branch
+   - Git branch 	  		   : Melihat semua daftar branch yang ada di local
+   - Git branch --all 		   : Melihat semua daftar branch yang ada di public
+   - Git branch nama_branch    : Membuat branch baru
+   - Git checkout nama_branch  : Berpindah branch
+   - Git branch -d nama_branch : Menghapus branch
+   - Git merge nama_branch 	   : Menggabungkan commit dari 2 branch dengan branch yang sedang aktif. Untuk menggabungkannya pastikan tidak ada file yang belum di commit (` git merge nama_branch `)
+
+6. Conflict
+   - Terjadi ketika merging 2 branch yang memiliki perubahan pada file yang sama, ketika conflict terjadi salah satu branch harus memperbaiki file yang bermasalah, setelah selesai dapat melakukan commit kembali, setelah itu dapat dilakukan merge kembali
