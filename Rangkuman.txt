@@ -37,11 +37,11 @@ Git
 
    - Manfaat
      + Parallel development
-	 + Digunakan untuk memanajemen pengembangan. misalnya test branch, unstable branch dan stable branch
+	   + Digunakan untuk memanajemen pengembangan. misalnya test branch, unstable branch dan stable branch
 
 5. Perintah Dasar Branch
-   - Git branch 	  		   : Melihat semua daftar branch yang ada di local
-   - Git branch --all 		   : Melihat semua daftar branch yang ada di public
+   - Git branch 	  		       : Melihat semua daftar branch yang ada di local
+   - Git branch --all 		     : Melihat semua daftar branch yang ada di public
    - Git branch nama_branch    : Membuat branch baru
    - Git checkout nama_branch  : Berpindah branch
    - Git branch -d nama_branch : Menghapus branch
@@ -51,10 +51,26 @@ Git
    - Terjadi ketika merging 2 branch yang memiliki perubahan pada file yang sama, ketika conflict terjadi salah satu branch harus memperbaiki file yang bermasalah, setelah selesai dapat melakukan commit kembali, setelah itu dapat dilakukan merge kembali
 
 7. Sourcetree 
-   + Merupakan software berbasis GUI yang memudahkan dan mempercepatk kinerja dalam pengoperasian git
+   + Merupakan software berbasis GUI yang memudahkan dan mempercepat kinerja dalam pengoperasian git
 
-   + Konfiurasi diff 
+   + Konfigurasi diff 
      - Pertama install diff merge (https://sourcegear.com/diffmerge/downloads.php)
      - Lalu konfigurasi diff pada sourcetree dengan cara pilih menu Tools->Option->Diff
      - Pada pilihan External Diff/Merge pilih 'DiffMerge', maka pengaturan Command akan otomatis terisi dengan menunjukan letak file yang bernama 'sgdm.exe'
      - Klik OK, konfigurasi diff selesai dilakukan   
+
+8. Resolve Merge Conflict dengan GUI
+   - Pilih "Branch" kemudian buat branch baru misalnya dengan nama conflict (branch berada di conflict)
+   - Klik kanan pada nama branch yang kedua lalu pilih "merge brach kedua into current branch", nanti akan muncul pemberitahuan conflict, dan file yang conflict akan ada di bagian unstage
+   - Untuk memperbaikinya gunakan diff yang tadi telah kita install
+   - Klik kanan pada file yang conflict -> Resolve Conflict -> Launch External Merge Tool, tunggu prosesnya
+   - Muncul 3 tampilan (branch conflict, sebelum conflict, branch kedua)
+   - Tentukan tampilan mana yang menjadi pusatnya
+   - Pilih menu berwarna kuning dengan nama "Jump to the next conflict" untuk menuju baris terjadinya conflict
+   - Atur dan perbaiki dengan cara menggunakan tombol "Apply change from right/left"
+   - Save dan close
+   - Pada bagian unstaged file akan muncul file dengan format '.orig'(file originalnya), hapus bila tidak diinginkan
+   - Commit perubahan yang tadi sudah dilakukan
+   - Pindah ke master lalu klik kanan pada branch nama config -> 'Merge conflic into current branch' -> OK
+   - Lalu push ke repo server
+   - Selesai
